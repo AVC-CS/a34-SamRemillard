@@ -7,10 +7,14 @@ int main()
   double rainfall1, rainfall2, rainfall3;
   double avg;
 
-  // TODO: Read three months and their rainfall values from standard input
-
-  // TODO: Calculate the average rainfall
-
+  cout << "Enter month1 and its rainfall: \n";
+  cin >> month1 >> rainfall1;
+  cout << "Enter month2 and its rainfall: \n";
+  cin >> month2 >> rainfall2;
+  cout << "Enter month3 and its rainfall: \n";
+  cin >> month3 >> rainfall3;
+  avg = (rainfall1 + rainfall2 + rainfall3) / 3.0;
+  
   cout << fixed << setprecision(2);
-  // TODO: Print the result in the required format
+  cout << "The average rainfall for " << month1 << ", " << month2 << ", and " << month3 << " is " << avg <<endl;
 }
